@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DrumKit</title>
+		<!--这句很重要可以令到手机转APP时候很好适应 或者用手机打开网页的时候也够爽-->
+		<meta  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+		<!--先引用Bootstrarap 才能引用自己的CSS-->
+		<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/mycss.css">
+		
+		 
+		<!--先引用Jquery.js 才能引用自己的Bootstrap.js，最后自己的js-->
+		<script src="js/jQuery.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+		<script src="js/drumkit.js"></script>
+		    
+			
+	</head>
+	<body>
+	<div class="container">
+	  <div class="row">
+	    <div id = "title">***Drum Kit Fun***</div>
+	    <div class="col-md-6" id="main">
+	      
+	      <div class="col-md-12" id="display">
+	        SHOW TIME
+	      </div>
+	       <div class="col-md-12" style="height:2%"></div>
+	      <div class="col-md-9" id="kit">
+	        &nbsp<button class="btn-music" id="heater1">Heater1 <br> A</button>&nbsp<button class="btn-music" id="heater2">Heater2 <br> S</button>&nbsp<button class="btn-music" id="heater3">Heater3 <br> D</button><div class="col-md-6" style="height:2%"></div>&nbsp<button class="btn-music" id="heater4">Heater4 <br> F</button>&nbsp<button class="btn-music" id="clap">Clap <br> G</button>&nbsp<button class="btn-music" id="openhh">Open HH <br> H</button>&nbsp<div class="col-md-6" style="height:2%"></div>&nbsp<button class="btn-music" id="kickh">KicK-H <br> J</button>&nbsp<button class="btn-music" id="kick">Kick<br> K</button>&nbsp<button class="btn-music" id="clohh">Clo HH<br>L</button>
+	
+	      </div>
+	    </div>
+	    <div id="foot">Designed & Coded by Qiu</div>
+	  </div>
+	
+	</div>
+	
+	<!-- audio from FCC by Amazon for drum-->
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" id="A"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" id="S"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" id="D"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" id="F"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" id="G"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" id="H"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" id="J"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" id="K"></audio>
+	<audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" id="L"></audio>
+
+	</body>
+</html>
