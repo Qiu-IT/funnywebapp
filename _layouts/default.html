@@ -1,30 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Funny Index</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-  <style>
-    .content{
-      font-size:150%;
-      margin-top:50px;
-      margin-left:auto;
-      margin-right:auto;
-      
-    }
-    </style>
-  </head>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
   <body>
 
-    <div class="content">
-      {{ content }}
-    </div>
-    <footer>
-      <div class="container">
-        Made by Qiu
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
       </div>
-    </footer>
+    </main>
+
+    {%- include footer.html -%}
+
   </body>
+
 </html>
