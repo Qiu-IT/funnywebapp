@@ -8,7 +8,6 @@ Demo-Project
 4. Markdown Viewer
 
 ### Code 
-
 ``` php
 class Solution {
 
@@ -29,5 +28,5 @@ class Solution {
     }
     }
 }
-```
+
 
